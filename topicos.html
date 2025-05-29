@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina inicial</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .menu{
+            list-style: none; /*bom dia*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #4e62d4;
+            padding: 10px 0;
+            top: 0;/*posiciona o elemento na superior da tela*/
+            position: fixed;/*fixa a tela pra nao rolar a tela*/
+            width: 100%;
+            z-index: 1000;
+
+                }
+    </style>
+
+</head>
+<body>
+    <ul class="menu">
+        <li>inicio
+        <li>sobre
+        <li>perfil
+        <li>contatos
+        <li><a href="./login.html">Conta</a>
+    </ul>
+</body>
+</html>
