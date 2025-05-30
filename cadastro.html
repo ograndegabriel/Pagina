@@ -1,71 +1,75 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Pagina de login</title>
-</head>
-<body>
-    <div class="container">
-
-        <h2>Login</h2>
-        <input type="text" 
-        placeholder="Email"><br>
-        <input type="Password" 
-        placeholder="Senha"><br>
-       <button>Continuar</button>
-       <a href="/cadstro.html">Cadastra-se</a><br>
-       <a href="">Esqueci Senha</a>
-
-    </div>
+    <title>Página de login</title>
     <style>
-        body{
-            background-color: rgb(140, 192, 116);
-            font-family: Arial, Helvetica, sans-serif;
+        button {
+
+        margin: 10px;
+        width: 100px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: #87A330;
+        cursor: grab;
+        }
+        
+        body {
+            background-color: #91b11294;
+            font-family: sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 50vh;
-            margin: 0;
+            height: 75vh;
+            margin: 0%;
+
         }
-        .container{
-            background-color: rgb(61, 133, 13);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 50px;
-            text-align: center;
-        
+        .container {
+
+         background-color: #CAD593;
+         padding: 30px;
+         border-radius: 20px;
+         box-shadow: 30px 10px 20px #252627;
+         text-align: center;
+         
+
         }
-        input{
-            padding: 10px;
-            margin: 10px;
-            border: 5px inset yellowgreen;
-            border-radius: 19px;
-            box-shadow: 0 0 10px;
-        }
-        button{
-            width: 95%;
-            height: 30px;
-            background-color: rgb(46, 196, 109);
-            border-radius: 25px;
-            border: greenyellow;
-            cursor: grab;
+        input {
+
+        padding: 10px;
+        margin: 10px;
+        border: double rgb(104, 98, 90);
+        border-radius: 20px;
+
         }
         button:hover{
-            background-color: rgb(2, 3, 3);
-            color: blue;
+            background-color: #CAD593;
+            border:double #243010;
         }
-        a{
-          color: red; 
-          text-decoration: solid;
-        }
-        a:hover{
-            text-decoration: underline;
-            color: bisque
-        }
+        a {
+           color: black; 
+           text-decoration: solid;
 
+        }
+        a:hover {
+       
+        color: #243010;
+        }           
     </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <input type="text"
+        placeholder="email"><br>
+        <input type="password"
+        placeholder="Senha"><br>
+        <button><a href=index.html>Login</a></button><br>
+        <a href="cadastro.html">Cadastre-se</a><br>
+        <a href="./esquecisenha.html">Esqueci minha senha</a><br>
+
+    </div>
 </body>
 </html>
