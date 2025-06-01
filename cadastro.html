@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de login</title>
+    <script src="./validação.js"></script>
     <style>
         button {
 
@@ -29,7 +30,7 @@
         .container {
 
          background-color: #CAD593;
-         padding: 30px;
+         padding: 40px;
          border-radius: 20px;
          box-shadow: 30px 10px 20px #252627;
          text-align: center;
@@ -62,12 +63,17 @@
 <body>
     <div class="container">
         <h2>Login</h2>
-        <input type="text"
-        placeholder="email"><br>
-        <input type="password"
-        placeholder="Senha"><br>
-        <button><a href=index.html>Login</a></button><br>
-        <a href="cadastro.html">Cadastre-se</a><br>
+        <input type="text" id="Gmail"
+        placeholder="email">
+        <p class="gem" id="gem"></p>
+        <br> 
+
+    <input type="password" id="senha" placeholder="Senha">
+    <p class="mensagem" id="mensagem"></p>
+        
+        <button onclick="verificarSenha(); verificarEmail();"><a href=index.html>Login</a></button><br>
+        <a href="cadastro.html">Cadastre-se</a>
+        <br>
         <a href="./esquecisenha.html">Esqueci minha senha</a><br>
 
     </div>
