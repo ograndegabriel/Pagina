@@ -26,12 +26,40 @@
             z-index: 1000;
 
                 }
+        .menu li{
+            position: relative;
+        }
+        .menu li a{
+            color:bisque
+            text-decoration:none;
+            padding:10px 20px;
+            display:block
+        }
+        .menu li:hover{
+            background-color: cadetblue;
+        }
+        .menu li ul{
+            position: absolute;
+            top:100%;
+            left: 0;
+            background-color: aquamarine;
+            display: none;
+            width: 150px;
+        }
     </style>
 
 </head>
+
 <body>
     <ul class="menu">
         <li><a href="">inicio</a>
+
+            <ul>
+                <li><a href="">compras</a>
+                <li><a href="">vendas</a>
+                <li><a href="">trocas</a>
+            </ul>
+
         <li><a href="">sobre</a>
         <li><a href="">perfil</a>
         <li><a href="">perfil</a>
